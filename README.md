@@ -16,17 +16,16 @@ HTML (HyperText Markup Language) হলো ওয়েব পেজ তৈরি �
 
 HTML ডকুমেন্ট সাধারণত নিচের মত গঠিত হয়:
 
-<!DOCTYPE html> <!-- এইটি HTML5 ডকুমেন্ট বোঝায় -->
-<html>
-  <head>
-    <title>শিরোনাম</title> <!-- ব্রাউজারের ট্যাবে যেটা দেখা যাবে -->
-  </head>
-  <body>
-    <!-- মূল কনটেন্ট এখানে থাকবে -->
-    <h1>স্বাগতম!</h1>
-    <p>এটি একটি উদাহরণ পৃষ্ঠা।</p>
-  </body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;শিরোনাম&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;স্বাগতম!&lt;/h1&gt;
+    &lt;p&gt;এটি একটি উদাহরণ পৃষ্ঠা।&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 
 
 ---
@@ -35,67 +34,45 @@ HTML ডকুমেন্ট সাধারণত নিচের মত গ�
 
 হেডিং ট্যাগ:
 
-HTML-এ মোট ৬টি হেডিং ট্যাগ আছে:
-
-<h1>সবচেয়ে বড় হেডিং</h1>
-<h2>...</h2>
+&lt;h1&gt;সবচেয়ে বড় হেডিং&lt;/h1&gt;
+&lt;h2&gt;...&lt;/h2&gt;
 ...
-<h6>সবচেয়ে ছোট হেডিং</h6>
+&lt;h6&gt;সবচেয়ে ছোট হেডিং&lt;/h6&gt;
 
 প্যারাগ্রাফ:
 
-<p>এটি একটি সাধারণ প্যারাগ্রাফ।</p>
+&lt;p&gt;এটি একটি সাধারণ প্যারাগ্রাফ।&lt;/p&gt;
 
 
 ---
 
 অধ্যায় ৪: লিস্ট
 
-HTML-এ দুই ধরনের লিস্ট থাকে:
+&lt;ul&gt;
+  &lt;li&gt;আপেল&lt;/li&gt;
+  &lt;li&gt;কমলা&lt;/li&gt;
+&lt;/ul&gt;
 
-1. Unordered List (<ul>) → বিন্দু দিয়ে তালিকা
-
-
-2. Ordered List (<ol>) → সংখ্যা/বর্ণ দিয়ে তালিকা
-
-
-
-<ul>
-  <li>আপেল</li>
-  <li>কমলা</li>
-</ul>
-
-<ol>
-  <li>প্রথম</li>
-  <li>দ্বিতীয়</li>
-</ol>
+&lt;ol&gt;
+  &lt;li&gt;প্রথম&lt;/li&gt;
+  &lt;li&gt;দ্বিতীয়&lt;/li&gt;
+&lt;/ol&gt;
 
 
 ---
 
 অধ্যায় ৫: টেবিল
 
-HTML টেবিল তৈরির জন্য ব্যবহার হয়:
-
-<table>: পুরো টেবিল
-
-<tr>: সারি (row)
-
-<th>: হেডার কলাম
-
-<td>: সাধারণ কলাম
-
-
-<table border="1">
-  <tr>
-    <th>নাম</th>
-    <th>বয়স</th>
-  </tr>
-  <tr>
-    <td>রাহুল</td>
-    <td>২৫</td>
-  </tr>
-</table>
+&lt;table border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;নাম&lt;/th&gt;
+    &lt;th&gt;বয়স&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;রাহুল&lt;/td&gt;
+    &lt;td&gt;২৫&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 
 ---
@@ -104,28 +81,26 @@ HTML টেবিল তৈরির জন্য ব্যবহার হয়:
 
 লিংক:
 
-<a href="https://example.com">এই লিংকে যাও</a>
+&lt;a href=&quot;https://example.com&quot;&gt;এই লিংকে যাও&lt;/a&gt;
 
 ছবি:
 
-<img src="image.jpg" alt="ছবির বর্ণনা" width="200">
+&lt;img src=&quot;image.jpg&quot; alt=&quot;ছবির বর্ণনা&quot; width=&quot;200&quot;&gt;
 
 
 ---
 
 অধ্যায় ৭: ফর্ম
 
-HTML ফর্ম ব্যবহার করে ইউজারের ইনপুট নেওয়া হয়:
-
-<form action="submit.php" method="post">
-  <label>নাম:</label>
-  <input type="text" name="username">
-  <br>
-  <label>বার্তা:</label>
-  <textarea name="message"></textarea>
-  <br>
-  <button type="submit">জমা দিন</button>
-</form>
+&lt;form action=&quot;submit.php&quot; method=&quot;post&quot;&gt;
+  &lt;label&gt;নাম:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;
+  &lt;br&gt;
+  &lt;label&gt;বার্তা:&lt;/label&gt;
+  &lt;textarea name=&quot;message&quot;&gt;&lt;/textarea&gt;
+  &lt;br&gt;
+  &lt;button type=&quot;submit&quot;&gt;জমা দিন&lt;/button&gt;
+&lt;/form&gt;
 
 
 ---
@@ -134,32 +109,30 @@ HTML ফর্ম ব্যবহার করে ইউজারের ইন�
 
 অডিও:
 
-<audio controls>
-  <source src="sound.mp3" type="audio/mpeg">
+&lt;audio controls&gt;
+  &lt;source src=&quot;sound.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
   আপনার ব্রাউজার অডিও প্লে করতে পারছে না।
-</audio>
+&lt;/audio&gt;
 
 ভিডিও:
 
-<video controls width="300">
-  <source src="video.mp4" type="video/mp4">
+&lt;video controls width=&quot;300&quot;&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
   আপনার ব্রাউজার ভিডিও প্লে করতে পারছে না।
-</video>
+&lt;/video&gt;
 
 
 ---
 
 অধ্যায় ৯: সেমান্টিক এলিমেন্ট
 
-এই ট্যাগগুলো ডকুমেন্টকে অর্থপূর্ণ করে তোলে:
-
-<header>ওয়েবসাইটের উপরের অংশ</header>
-<nav>নেভিগেশন লিংক</nav>
-<main>মূল কনটেন্ট</main>
-<section>বিভাগ</section>
-<article>স্বতন্ত্র কনটেন্ট</article>
-<aside>সাইড ইনফো</aside>
-<footer>পাদটীকা</footer>
+&lt;header&gt;ওয়েবসাইটের উপরের অংশ&lt;/header&gt;
+&lt;nav&gt;নেভিগেশন লিংক&lt;/nav&gt;
+&lt;main&gt;মূল কনটেন্ট&lt;/main&gt;
+&lt;section&gt;বিভাগ&lt;/section&gt;
+&lt;article&gt;স্বতন্ত্র কনটেন্ট&lt;/article&gt;
+&lt;aside&gt;সাইড ইনফো&lt;/aside&gt;
+&lt;footer&gt;পাদটীকা&lt;/footer&gt;
 
 
 ---
@@ -182,33 +155,30 @@ HTML ফর্ম ব্যবহার করে ইউজারের ইন�
 
 অধ্যায় ১১: HTML Entities & Symbols
 
-HTML-এ কিছু বিশেষ ক্যারেক্টার সরাসরি ব্যবহার করা যায় না। যেমন: <, >, & ইত্যাদি।
-
-<p>কম চিহ্ন: &lt;</p>
-<p>বেশি চিহ্ন: &gt;</p>
-<p>অ্যান্ড চিহ্ন: &amp;</p>
-<p>কপিরাইট: &copy;</p>
-<p>নন-ব্রেকিং স্পেস: &nbsp;</p>
+&lt;p&gt;কম চিহ্ন: &amp;lt;&lt;/p&gt;
+&lt;p&gt;বেশি চিহ্ন: &amp;gt;&lt;/p&gt;
+&lt;p&gt;অ্যান্ড চিহ্ন: &amp;amp;&lt;/p&gt;
+&lt;p&gt;কপিরাইট: &amp;copy;&lt;/p&gt;
+&lt;p&gt;নন-ব্রেকিং স্পেস: &amp;nbsp;&lt;/p&gt;
 
 
 ---
 
 অধ্যায় ১২: IFrame ও Embed
 
-<iframe src="https://example.com" width="600" height="400"></iframe>
-
-<embed src="file.pdf" width="300" height="400">
+&lt;iframe src=&quot;https://example.com&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/iframe&gt;
+&lt;embed src=&quot;file.pdf&quot; width=&quot;300&quot; height=&quot;400&quot;&gt;
 
 
 ---
 
 অধ্যায় ১৩: Meta Tags ও SEO
 
-<meta charset="UTF-8">
-<meta name="description" content="HTML শেখার বাংলা বই">
-<meta name="keywords" content="HTML, শেখা, বাংলা">
-<meta name="author" content="আপনার নাম">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;HTML শেখার বাংলা বই&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;HTML, শেখা, বাংলা&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;আপনার নাম&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
 
 ---
@@ -227,28 +197,28 @@ aria-* অ্যাট্রিবিউট সহায়ক টুলের �
 
 অধ্যায় ১৫: Responsive Design
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<picture>
-  <source media="(max-width: 600px)" srcset="small.jpg">
-  <img src="large.jpg" alt="ছবি">
-</picture>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;picture&gt;
+  &lt;source media=&quot;(max-width: 600px)&quot; srcset=&quot;small.jpg&quot;&gt;
+  &lt;img src=&quot;large.jpg&quot; alt=&quot;ছবি&quot;&gt;
+&lt;/picture&gt;
 
 
 ---
 
 অধ্যায় ১৬: HTML Boilerplate
 
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আমার ওয়েবসাইট</title>
-</head>
-<body>
-  <!-- কনটেন্ট -->
-</body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;bn&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;আমার ওয়েবসাইট&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- কনটেন্ট --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
 
 ---
@@ -273,8 +243,8 @@ aria-* অ্যাট্রিবিউট সহায়ক টুলের �
 
 অধ্যায় ১৮: HTML + CSS + JS সংযোগ
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 
 
 ---
